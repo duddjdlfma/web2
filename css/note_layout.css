@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+#wrap{}
+#header{background: url(../img/header_bg.jpg) top center repeat-x ;}
+/* #contents{background:#222;} */
+#footer {background:#333;}
+
+.cont_nav {background-color: #f6fdff; display: none;}
+.cont_tit {background-color: #EAF7FD;}
+.cont_ban {background-color: #dceff7;}
+.cont_cont {background-color: #f6fdff;}
+
+.container{margin:0 auto; width:990px;}

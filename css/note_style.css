@@ -1,0 +1,205 @@
+@charset "UTF-8";
+
+/*헤더 메뉴*/
+.header{}
+.header .header_menu{display: flex; justify-content: flex-end;}
+.header .header_menu ul{display: flex;}
+.header .header_menu li{ padding: 10px 0px 10px 10px;}
+.header .header_menu li a{ color:#fff;}
+.header .header_menu li a:hover{ color:#666;}
+
+/* 헤더 타이틀 */
+.header .header_tit {text-align: center;}
+.header .header_tit h1 { background: #4aa8d4; display: inline-block; color:#fff; padding: 10px;}
+.header .header_tit span {padding: 5px 10px 5px 10px; margin: -7px; display: inline-block; background: #2698cb; color:#fff;}
+
+/* 헤더 아이콘 */
+.header .header_icon {display: flex; justify-content: center; margin: 30px 0px 0px 0px;}
+.header .header_icon ul {display: flex; justify-content: space-between;}
+.header .header_icon li {padding: 10px;}
+.header .header_icon li a.icon1 {width: 60px;  height: 60px; display: block; background: url(../img/icon.png) 0px 0px;}
+.header .header_icon li a.icon2 {width: 60px;  height: 60px; display: block; background: url(../img/icon.png) 0px -60px;}
+.header .header_icon li a.icon3 {width: 60px;  height: 60px; display: block; background: url(../img/icon.png) 0px -120px;}
+.header .header_icon li a.icon4 {width: 60px;  height: 60px; display: block; background: url(../img/icon.png) 0px -180px;}
+.header .header_icon li a.icon1:hover { background-position: -60px 0px;}
+.header .header_icon li a.icon2:hover { background-position: -60px -60px;}
+.header .header_icon li a.icon3:hover { background-position: -60px -120px;}
+.header .header_icon li a.icon4:hover { background-position: -60px -180px;}
+
+/* 메인메뉴 */
+.nav {display: flex; justify-content: space-between; margin: 20px 0px 20px 0px;}
+.nav h2 {}
+.nav div {}
+.nav div h3{color:18px; color:#25a2d0; padding: 0px 0px 10px 0px;}
+.nav div ol {display: flex; flex-flow: wrap;}
+.nav div ol li{ width: 198px;}
+.nav div ol li a:hover {border-bottom: 1px solid red;}
+
+/* 메인 타이틀 */
+.tit {text-align: center; position: relative; padding: 20px;}
+.tit h3 {font-size: 40px; color:#2c94c4;}
+.tit h3 a {width: 60px; height: 60px; display: block; position: absolute; right: 0; top: 20px; background: url(img/icon.png) 0px -600px;}
+.tit h3 a:hover{ background-position: -60px -600px;}
+
+/* 배너 슬라이드 */
+.ban { display: flex; position: relative; justify-content: space-evenly; padding: 10px 0px 20px 0px;}
+.ban ul {display: flex;}
+.ban ul li {padding: 20px 10px 10px 20px;}
+.ban ul li a {display: block; border:4px solid #dcdcdc;}
+.ban ul li a:hover {border:4px solid #98bcdc;}
+.ban a.prev {position: absolute; left: -80px; top: 40%; width: 43px; height: 43px; background: url(../img/icon.png) -150px 0px;}
+.ban a.next {position: absolute; right: -80px; top: 40%; width: 43px; height: 43px; background: url(../img/icon.png) -150px -43px;}
+.ban a.prev:hover{background-position: -193px 0px;}
+.ban a.next:hover{background-position: -193px -43px;}
+
+/* 메인 게시판 */
+/* 게시판 틀 */
+.cont{display: flex;  flex-flow: wrap; padding: 20px 0px 30px 0px;}
+.cont .column {border-right:1px solid black; width: 30%; padding: 0px 30px 20px 0px; margin: 0px 20px 30px 0px;}
+.cont .column h3{position: relative;}
+.cont .column h3 span:first-child {font-weight: bold; font-size: 16px; color:#2c94c4;}
+.cont .column p {padding: 0px 0px 40px 70px; border-bottom: 1px solid black; margin-bottom: 15px;}
+.cont .column h4{color:#0093bd; font-weight: bold; font-size: 14px;}
+
+.cont .col1{}
+.cont .col2{}
+.cont .col3{border:none; padding: 0; width: 270px;}
+.cont .col4{}
+.cont .col5{}
+.cont .col6{border:none; padding: 0; width: 270px;}
+
+.cont .col1 h3 span:last-child { display: block; width: 60px; height: 60px; background: url(../img/icon.png) 0px -240px; position: absolute;}
+.cont .col2 h3 span:last-child { display: block; width: 60px; height: 60px; background: url(../img/icon.png) 0px -300px; position: absolute;}
+.cont .col3 h3 span:last-child { display: block; width: 60px; height: 60px; background: url(../img/icon.png) 0px -360px; position: absolute;}
+.cont .col4 h3 span:last-child { display: block; width: 60px; height: 60px; background: url(../img/icon.png) 0px -420px; position: absolute;}
+.cont .col5 h3 span:last-child { display: block; width: 60px; height: 60px; background: url(../img/icon.png) 0px -480px; position: absolute;}
+.cont .col6 h3 span:last-child { display: block; width: 60px; height: 60px; background: url(../img/icon.png) 0px -540px; position: absolute;}
+
+/* notice1 */
+.cont .notice { position: relative;}
+.cont .notice h4 {padding-bottom: 5px;}
+.cont .notice ul {position: relative;}
+.cont .notice ul li { text-overflow: ellipsis; white-space: nowrap; overflow: hidden;}
+.cont .notice ul li a {font-size: 12px; padding-left: 6px;}
+
+.cont .notice ul li::before {content: ""; display: block; width: 3px; height: 3px; background: black; position: absolute; left: 0; transform: translateY(9px);}
+.cont .notice a.more { position: absolute; right: 0px; top: 0; background: url(img/icon.png) -150px -90px; display: block; width: 17px; height: 17px;}
+.cont .notice a.more:hover {background-position: -167px -90px;}
+
+/* notice2 */
+.cont .notice2 {position: relative; margin-top: 10px;}
+.cont .notice2 h4 {padding-bottom: 5px;}
+.cont .notice2 ul {position: relative;}
+.cont .notice2 ul li { white-space: nowrap; display: flex; justify-content: space-between;}
+.cont .notice2 ul li a {font-size: 12px; padding-left: 6px; display: inline-block; width: 65%; overflow: hidden; text-overflow: ellipsis;}
+.cont .notice2 ul li span {}
+
+.cont .notice2 ul li::before {content: ""; display: block; width: 3px; height: 3px; background: black; position: absolute; left: 0; transform: translateY(7px);}
+.cont .notice2 a.more { position: absolute; right: 0px; top: 0; background: url(img/icon.png) -150px -90px; display: block; width: 17px; height: 17px;}
+.cont .notice2 a.more:hover {background-position: -167px -90px;}
+
+/* notice3 */
+.cont .notice3 {position: relative;}
+.cont .notice3 h4 {padding-bottom: 5px;}
+.cont .notice3 ul {}
+.cont .notice3 ul li {padding: 8px 0px 14px 60px; position: relative; }
+.cont .notice3 ul li a {}
+.cont .notice3 ul li a img {width: 50px; position: absolute; left: 0; top: 0; border:1px solid  blue;}
+.cont .notice3 ul li a strong {display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+.cont .notice3 ul li a span {font-size: 12px; display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+
+.cont .notice3 a.more { position: absolute; right: 0px; top: 0; background: url(img/icon.png) -150px -90px; display: block; width: 17px; height: 17px;}
+.cont .notice3 a.more:hover {background-position: -167px -90px;}
+
+/* login-form */
+/* 로그인 헤더 */
+.login_wrap {border: 1px solid #f2f4f5; padding: 10px; background-color: #ccc;}
+.login_wrap .login_header{}
+.login_wrap .login_header .lg_check{display: inline-block;}
+.login_wrap .login_header .lg_ip{ display: inline-block; padding-left: 10px;}
+.login_wrap .login_header .lg_ip em{color:#0093bd; text-decoration:underline;}
+
+/* 로그인 */
+.login_wrap .login_form {padding: 8px 0px 3px 0px; position: relative;}
+.login_wrap .login_form #id{padding: 3px; margin: 2px; border:1px solid #bebebe;}
+.login_wrap .login_form #pw{padding: 3px; margin: 2px; border:1px solid #bebebe;}
+.login_wrap .login_form button {position: absolute; right: 10px; top: 8px; padding: 18px; margin: 2px; border:1px solid #bebebe}
+
+/* 로그인 푸터 */
+.login_wrap .login_footer{}
+.login_wrap .login_footer ul{}
+.login_wrap .login_footer ul li{}
+.login_wrap .login_footer ul li a{}
+.login_wrap .login_footer ul li a strong{}
+.login_wrap .login_footer ul li:first-child::after{content: " /";}
+
+/* 팝업 */
+.popup {}
+.popup h4 {padding: 5px 0px 5px 0px}
+.popup ul { display: flex;}
+.popup ul li { padding: 3px;}
+.popup ul li a {}
+.popup ul li a img {width: 100%}
+
+/* mouse hover */
+.mouse_hover {}
+.mouse_hover h4 {}
+.mouse_hover ul {display: flex; justify-content: space-between; text-align: center;}
+.mouse_hover ul li {}
+.mouse_hover ul li a span:hover em{visibility: visible;}
+.mouse_hover ul li a em{background: rgba(0,0,0,0.7); color:#fff; position: absolute; left: 0; width: 100%; height: 100%; visibility: hidden;}
+.mouse_hover ul li a span{position: relative; display: block; width: 93px; height: 93px; line-height: 93px; }
+.mouse_hover ul li a span img{ width: 100%;}
+
+
+/* mouse hover2 */
+.mouse_hover2 {margin-top: 13px;}
+.mouse_hover2 h4 {}
+.mouse_hover2 ul { display: flex; justify-content: space-between; text-align: center;}
+.mouse_hover2 ul li {}
+
+.mouse_hover2 ul li a span:hover em{visibility: visible}
+.mouse_hover2 ul li a em{visibility: hidden; position: absolute; left: 0; bottom: 0; background: rgba(0,0,0,0.7); color: #fff; width: 100%;}
+.mouse_hover2 ul li a span{display: block; width: 93px; position: relative;}
+.mouse_hover2 ul li a span img{ width: 100%;}
+
+/* 탭 메뉴 */
+.tab_menu { border: 1px solid #ccc; padding: 10px; height: 100px; }
+.tab_menu h4 {}
+
+.tab_menu > ul {display: flex; border-bottom: 1px solid #ccc; position: relative;}
+.tab_menu > ul > li {border:1px solid #ccc; margin-bottom: -1px; padding: 5px;}
+.tab_menu > ul > li > ul { position: absolute; left: 0; top: 35px;} 
+.tab_menu > ul > li > ul > li { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; width: 270px; position: relative;} 
+.tab_menu > ul > li > ul > li a {padding-left: 10px;} 
+.tab_menu > ul > li > ul > li a::before {content: ""; display: block; width: 3px; height: 3px; background: black; position: absolute; left: 0; top: 8px;} 
+
+/* notice4 */
+.notice4 {border:1px solid #ccc; margin-top: 15px;position: relative;}
+.notice4 h4{ border-bottom: 1px solid #ccc; padding: 10px; }
+.notice4 h4 em {color: red}
+.notice4 ul {padding: 10px;}
+.notice4 ul li{padding-left: 10px; display: flex; justify-content: space-between; position: relative;}
+.notice4 ul li::before{content:""; display: block; width: 3px; height: 3px; background-color: black; position: absolute; left: 0; top: 7px;}
+.notice4 ul li a{white-space: nowrap; overflow: hidden; text-overflow: ellipsis; width: 60%;}
+.notice4 .more {position: absolute; right: 10px; top: 10px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.hideen{
+    display: none;
+}
