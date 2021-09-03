@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number guessing game</title>
+    <link rel="stylesheet" href="css/numberGame.css">
+</head>
+<body>
+    <div id="wrap">
+        <div id="main">
+        <h1>Number guessing game</h1>
+        <p>We have selected a random number between 1 and 100.<br>
+            See if you can guess it in 10 turns or less.
+            <br> We'll tell you if your guess was too high or too low.</p>
+
+            <form id="form1">
+                Enter a guess:
+                <input type="text" id="inn">
+                <button id="btn">Submit guess</button>
+            </form>
+
+            <div id="prev" class="hideen">Previous guesses: <span></span></div>
+            <div id="answer" class="hideen">틀렸나 맞췄나</div>
+            <div id="result" class="hideen">힌트</div>
+            <button id="rere" class="hideen">다시하기</button>
+        </div>
+        <a href="index.html">HOME</a>
+    </div>
+    <script src="js/numberGame.js"></script>
+</body>
+</html>
+
+<!-- const numberStr = "123,456,789";
+
+// 전체 콤마 제거
+const number = numberStr.replace(/,/g, "");
+document.write(number); -->
